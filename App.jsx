@@ -9,7 +9,7 @@ App = React.createClass({
   render() {
     return (
       <div>
-      <button className="btn" onClick={this.handleSubmit} >Click Me</button>
+      <button className="btn btn-success" onClick={this.handleSubmit} >Click Me</button>
       <p>You've pressed the button {this.state.counter} times.</p>
       </div>
 
