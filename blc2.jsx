@@ -1,3 +1,6 @@
+//var Bookings = new Mongo.Collection("bookings");
+Bookings = new Mongo.Collection("bookings");
+
 if (Meteor.isClient) {
   Meteor.startup(function () {
     React.render(<App />, document.getElementById("render-target"));
