@@ -1,3 +1,4 @@
+// it gets hard using npm components in meteor...
 Table = React.createClass({
   // This mixin makes the getMeteorData method work
   mixins: [ReactMeteorData],
