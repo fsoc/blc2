@@ -3,12 +3,14 @@
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <h1>Bookings:</h1>
+  <ul>
+    {{#each bookings}}
+    {{> booking}}
+    {{/each}}
+  </ul>
 </body>
 
-<template name="hello">
-  <button class="btn">Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="booking">
+<li>{{text}} {{createdAt}}</li>
 </template>
