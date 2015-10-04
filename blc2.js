@@ -6,6 +6,12 @@ if (Meteor.isClient) {
       return Bookings.find({});
     }
   });
+
+  UI.registerHelper('formatTime', function(context, options) {
+    if(context) {
+      return moment(context).format("YYYY-MMM-DD HH:MM");
+    }
+  });
 }
 
 if (Meteor.isServer) {
