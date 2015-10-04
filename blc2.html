@@ -4,13 +4,5 @@
 
 <body>
   <h1>Bookings:</h1>
-  <ul>
-    {{#each bookings}}
-    {{> booking}}
-    {{/each}}
-  </ul>
+  {{> reactiveTable collection=bookings}}
 </body>
-
-<template name="booking">
-<li>{{text}} {{formatTime createdAt}}</li>
-</template>
